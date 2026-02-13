@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resources/img/logo__powerrig.png" type="image/png">
+    <title>Store - PowerRig</title>
+    <link rel="stylesheet" href="resources/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="resources/img/logo__powerrigblanco.png" alt="Logo" width="150" height="30" class="d-inline-block align-text-top">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoriteslist.html">Lista de favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" onclick="openLoginModal()">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Productos Disponibles</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="resources/img/pcgamergamaalta1.webp" class="card-img-top" alt="PC Gama Alta">
+                    <div class="absolute top-0 right-0">
+                        <img src="resources/img/ryzenprocesador.svg" alt="">
+                        <img class="db tr" src="resources/img/nvidiagrafica.svg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gama Alta</h5>
+                        <h5 class="card-text">Precio: $53,345</h5>
+                        <p>Especificaciones:</p>
+                        
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-cpu.svg" alt="CPU Icon" class="icon">
+                            <div>
+                                <h6>Procesador:</h6>
+                                <p>Intel Core i9-11900K</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-ram.svg" alt="RAM Icon" class="icon">
+                            <div>
+                                <h6>RAM:</h6>
+                                <p>64GB RAM DDR4</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-gpu.svg" alt="GPU Icon" class="icon">
+                            <div>
+                                <h6>Targeta de video:</h6>
+                                <p>RTX 3090 24GB</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-hd.svg" alt="Storage Icon" class="icon">
+                            <div>
+                                <h6>Almacenamiento:</h6>
+                                <p>2TB SSD NVME</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-fan.svg" alt="Cooling Icon" class="icon">
+                            <div>
+                                <h6>Enfriamiento:</h6>
+                                <p>Enfriamiento Líquido de 360mm</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Comparar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="resources/img/pcgamergamabaja1.webp" class="card-img-top" alt="PC Entrada">
+                    <div class="absolute top-0 right-0">
+                        <img src="resources/img/ryzenprocesador.svg" alt="">
+                        <img class="db tr" src="resources/img/radeongraficos.svg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gamer de Entrada</h5>
+                        <h5 class="card-text">Precio: $12,499</h5>
+                        <p>Especificaciones:</p>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-cpu.svg" alt="CPU Icon" class="icon">
+                            <div>
+                                <h6>Procesador:</h6>
+                                <p>AMD Ryzen 5 5600G</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-ram.svg" alt="RAM Icon" class="icon">
+                            <div>
+                                <h6>RAM:</h6>
+                                <p>16GB DDR4</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-gpu.svg" alt="GPU Icon" class="icon">
+                            <div>
+                                <h6>Tarjeta de Video:</h6>
+                                <p>Radeon Vega Integrada</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-hd.svg" alt="Storage Icon" class="icon">
+                            <div>
+                                <h6>Almacenamiento:</h6>
+                                <p>500GB SSD</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-fan.svg" alt="Cooling Icon" class="icon">
+                            <div>
+                                <h6>Enfriamiento:</h6>
+                                <p>Disipador de aire</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Comparar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="resources/img/pcgamermedia3.webp" class="card-img-top" alt="PC Gama Media">
+                    <div class="absolute top-0 right-0">
+                        <img src="resources/img/intelprocesador.svg" alt="">
+                        <img class="db tr" src="resources/img/nvidiagrafica.svg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gamer Gama Media</h5>
+                        <h5 class="card-text">Precio: $22,999</h5>
+                        <p>Especificaciones:</p>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-cpu.svg" alt="CPU Icon" class="icon">
+                            <div>
+                                <h6>Procesador:</h6>
+                                <p>Intel Core i5-12600K</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-ram.svg" alt="RAM Icon" class="icon">
+                            <div>
+                                <h6>RAM:</h6>
+                                <p>32GB DDR4</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-gpu.svg" alt="GPU Icon" class="icon">
+                            <div>
+                                <h6>Tarjeta de Video:</h6>
+                                <p>RTX 3060 Ti 8GB</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-hd.svg" alt="Storage Icon" class="icon">
+                            <div>
+                                <h6>Almacenamiento:</h6>
+                                <p>1TB SSD NVMe</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-fan.svg" alt="Cooling Icon" class="icon">
+                            <div>
+                                <h6>Enfriamiento:</h6>
+                                <p>Enfriamiento Líquido 240mm</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Comparar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="resources/img/pcgamergamaalta3.webp" class="card-img-top" alt="PC Gama Alta">
+                    <div class="absolute top-0 right-0">
+                        <img src="resources/img/ryzenprocesador.svg" alt="">
+                        <img class="db tr" src="resources/img/nvidiagrafica.svg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gamer Gama Alta</h5>
+                        <h5 class="card-text">Precio: $45,799</h5>
+                        <p>Especificaciones:</p>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-cpu.svg" alt="CPU Icon" class="icon">
+                            <div>
+                                <h6>Procesador:</h6>
+                                <p>AMD Ryzen 9 7950X</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-ram.svg" alt="RAM Icon" class="icon">
+                            <div>
+                                <h6>RAM:</h6>
+                                <p>64GB DDR5</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-gpu.svg" alt="GPU Icon" class="icon">
+                            <div>
+                                <h6>Tarjeta de Video:</h6>
+                                <p>RTX 4080 16GB</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-hd.svg" alt="Storage Icon" class="icon">
+                            <div>
+                                <h6>Almacenamiento:</h6>
+                                <p>2TB SSD NVMe</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="resources/icon-pc-gamer/sq-fan.svg" alt="Cooling Icon" class="icon">
+                            <div>
+                                <h6>Enfriamiento:</h6>
+                                <p>Enfriamiento Líquido 360mm</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Comparar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- PC 4 - Gama Baja -->
+    <div class="col-md-4">
+        <div class="card">
+            <img src="resources/img/pcgamergamabaja2.webp" class="card-img-top" alt="PC Gama Baja">
+            <div class="absolute top-0 right-0">
+                <img src="resources/img/intelprocesador.svg" alt="">
+                <img class="db tr" src="resources/img/nvidiagrafica.svg">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">PC Gamer Gama Baja</h5>
+                <h5 class="card-text">Precio: $9,999</h5>
+                <p>Especificaciones:</p>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-cpu.svg" alt="CPU Icon" class="icon">
+                    <div>
+                        <h6>Procesador:</h6>
+                        <p>Intel Core i3-12100F</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-ram.svg" alt="RAM Icon" class="icon">
+                    <div>
+                        <h6>RAM:</h6>
+                        <p>8GB DDR4</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-gpu.svg" alt="GPU Icon" class="icon">
+                    <div>
+                        <h6>Tarjeta de Video:</h6>
+                        <p>GTX 1650 4GB</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-hd.svg" alt="Storage Icon" class="icon">
+                    <div>
+                        <h6>Almacenamiento:</h6>
+                        <p>500GB SSD</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-fan.svg" alt="Cooling Icon" class="icon">
+                    <div>
+                        <h6>Enfriamiento:</h6>
+                        <p>Disipador de stock</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-secondary">Comparar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PC 5 - Gama Media Alta -->
+    <div class="col-md-4">
+        <div class="card">
+            <img src="resources/img/pcgamermedia2.webp" class="card-img-top" alt="PC Gama Media Alta">
+            <div class="absolute top-0 right-0">
+                <img src="resources/img/ryzenprocesador.svg" alt="">
+                <img class="db tr" src="resources/img/nvidiagrafica.svg">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">PC Gamer Gama Media-Alta</h5>
+                <h5 class="card-text">Precio: $32,499</h5>
+                <p>Especificaciones:</p>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-cpu.svg" alt="CPU Icon" class="icon">
+                    <div>
+                        <h6>Procesador:</h6>
+                        <p>AMD Ryzen 7 7700X</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-ram.svg" alt="RAM Icon" class="icon">
+                    <div>
+                        <h6>RAM:</h6>
+                        <p>32GB DDR5</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-gpu.svg" alt="GPU Icon" class="icon">
+                    <div>
+                        <h6>Tarjeta de Video:</h6>
+                        <p>RTX 4070 Ti 12GB</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-hd.svg" alt="Storage Icon" class="icon">
+                    <div>
+                        <h6>Almacenamiento:</h6>
+                        <p>2TB SSD NVMe</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-fan.svg" alt="Cooling Icon" class="icon">
+                    <div>
+                        <h6>Enfriamiento:</h6>
+                        <p>Enfriamiento Líquido 280mm</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-secondary">Comparar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PC 6 - Ultra Gama Alta -->
+    <div class="col-md-4">
+        <div class="card">
+            <img src="resources/img/pcgamergamaalta2.webp" class="card-img-top" alt="PC Ultra Gama Alta">
+            <div class="absolute top-0 right-0">
+                <img src="resources/img/intelprocesador.svg" alt="">
+                <img class="db tr" src="resources/img/nvidiagrafica.svg">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">PC Gamer Ultra Gama Alta</h5>
+                <h5 class="card-text">Precio: $79,999</h5>
+                <p>Especificaciones:</p>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-cpu.svg" alt="CPU Icon" class="icon">
+                    <div>
+                        <h6>Procesador:</h6>
+                        <p>Intel Core i9-14900K</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-ram.svg" alt="RAM Icon" class="icon">
+                    <div>
+                        <h6>RAM:</h6>
+                        <p>128GB DDR5</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-gpu.svg" alt="GPU Icon" class="icon">
+                    <div>
+                        <h6>Tarjeta de Video:</h6>
+                        <p>RTX 4090 24GB</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-hd.svg" alt="Storage Icon" class="icon">
+                    <div>
+                        <h6>Almacenamiento:</h6>
+                        <p>4TB SSD NVMe + 4TB HDD</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="resources/icon-pc-gamer/sq-fan.svg" alt="Cooling Icon" class="icon">
+                    <div>
+                        <h6>Enfriamiento:</h6>
+                        <p>Enfriamiento Líquido Custom</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-secondary">Comparar</a>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

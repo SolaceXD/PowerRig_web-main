@@ -1,0 +1,28 @@
+{
+  "name": "PowerRig - PC Gamer Personalizados",
+  "short_name": "PowerRig",
+  "description": "Tienda de PCs gamer personalizados. Configura tu PC ideal con los mejores componentes.",
+  "start_url": "index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#000000",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "resources/img/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "resources/img/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "games"],
+  "lang": "es-MX",
+  "dir": "ltr"
+}

@@ -1,0 +1,99 @@
+body {
+    background-color: #000000;
+    color: white;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.card {
+    width: 18rem;
+    background-color: #1D1E22;
+    color: white;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: black; /* Modal background color */
+    color: white; /* Text color */
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto; /* Center the modal */
+    position: relative; /* Position relative for centering */
+    top: 50%; /* Position from the top */
+    transform: translateY(-50%); /* Center vertically */
+    width: 80%; /* Width of the modal */
+    max-width: 500px; /* Max width */
+}
+.fondo-imagen {
+    background-image: url('resources/img/assistant-bg.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono y el texto */
+}
+
+.icon {
+    width: 50px; /* Ajusta el tamaño del icono según sea necesario */
+    height: auto;
+}
+.aspect-ratio--object {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100
+}
+.absolute {
+    position: absolute
+}
+.absolute--fill {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}    
+.absolute-ns {
+        position: absolute
+    }
+
+.absolute--fill-ns {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0
+}
+    .absolute--fill-m {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0
+    }
+    .db {
+        display: block
+    }
+    .tr {
+        text-align: right
+    }
