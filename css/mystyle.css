@@ -1,15 +1,25 @@
 body {
-    background-color: #000000;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #0b0c10 0%, #1d1e22 60%, #0f1119 100%);
     color: white;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
 }
 .card {
-    width: 18rem;
+    width: 100%;
+    max-width: 100%;
     background-color: #1D1E22;
     color: white;
 }
@@ -101,10 +111,10 @@ body {
 /* New Chatbot Styles */
 .chat-toggle {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     background-color: #007bff;
     color: white;
@@ -113,7 +123,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,123,255,0.5);
     z-index: 1000;
-    transition: transform 0.2s;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 .chat-toggle:hover {
@@ -124,12 +134,12 @@ body {
 .chat-modal {
     display: none;
     position: fixed;
-    bottom: 100px;
-    right: 30px;
-    width: 350px;
+    bottom: 90px;
+    right: 24px;
+    width: 360px;
     height: 500px;
     z-index: 1001;
-    border-radius: 10px;
+    border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 8px 32px rgba(0,0,0,0.5);
 }
@@ -209,10 +219,19 @@ body {
 }
 
 @media (max-width: 768px) {
+    .chat-toggle {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        bottom: 16px;
+    }
+
     .chat-modal {
-        width: calc(100vw - 60px);
-        height: 60vh;
-        right: 30px;
-        bottom: 100px;
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        width: auto;
+        max-width: calc(100vw - 32px);
+        height: 62vh;
     }
 }
